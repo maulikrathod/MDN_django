@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^books/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='book-detail'),
     url(r'^authers/$', views.AuthorListView.as_view(), name='authors'),
     url(r'^authers/(?P<pk>\d+)$', views.AuthorDetailView.as_view(), name='author-detail'),
+    url(r'^mybooks/$', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
 ]
